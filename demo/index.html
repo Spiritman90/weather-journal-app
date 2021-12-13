@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://openweathermap.org/themes/openweathermap/assets/vendor/owm/img/icons/logo_32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Alata&family=Epilogue:wght@400;600;700&family=Heebo&family=Inter&family=Josefin+Sans:wght@300&family=Kumbh+Sans:wght@400;700&family=PT+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App Journal</title>
+</head>
+<body>
+  <div class="content">
+  <section class="top-banner">
+    <div class="container">
+      <h1 class="heading">Weather Journal App</h1>
+      <form>
+        <input type="number" placeholder="Enter Zipcode here"  id="zip-code" autofocus>
+      </form>
+    </div>
+
+    <section class="how">
+      <form action="">
+      <h2>How are you feeling today?</h2>
+      <textarea id="feeling" name="feeling" rows="4" cols="50">
+        </textarea>  <br><br> 
+        <button type="submit" id='generate'>GENERATE</button>
+      </form>                                               
+    </section>
+
+    <section class="entry">
+      <h2>Most Recent Entry:</h2><br>
+      <p><strong>Date:</strong> <span class="date"></span></p><br>
+      <p><strong>Temperature:</strong> <span class="temperature"></span></p><br>
+      <p> <strong>Location: </strong><span class="city"></span></p><br>
+      <p><strong>Feeling: </strong><span class="feeling"></span></p><br>
+    </section>
+
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">Adewole Femi</a>
+      </small>
+    </div>
+  </footer>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>
